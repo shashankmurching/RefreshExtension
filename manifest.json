@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Refresh Extension",
+  "description": "Will refresh the page every X seconds.",
+  "version": "1.0",
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "alarms"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  }
+}
